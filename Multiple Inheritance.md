@@ -32,14 +32,37 @@ To write a Python program to get the name, attendance, and ID of a student and c
 ### PROGRAM
 
 ```
+class student:
+    def __init__(self):
+        self.name=n
+        self.id=id
+        self.attendance=a
+class fun(student):
+    def fun(self):
+        print(self.name)
+        print(self.id)
+class funzz(student):
+    def funzz(self):
+        if self.attendance>75:
+            print("Eligible for Exam")
+        else:
+            print("Not Eligible for Exam")
+n=input()
+id=int(input())
+a=int(input())
+obj=fun()
+obj.fun()
+obj=funzz()
+obj.funzz()
 
 ```
 
 ### OUTPUT
 
+<img width="1039" height="292" alt="Screenshot 2025-08-27 143732" src="https://github.com/user-attachments/assets/f65cdb15-f724-4da2-9686-f15be93f0e80" />
 
 ### RESULT
-
+Thus the Python program to get the name, attendance, and ID of a student and check if they are eligible for the next module using multiple inheritance is executed successfully.
 
 
 
