@@ -4,37 +4,50 @@
 ---
 
 ### AIM  
-To write a Python program to get the employee and doctor details and display them using hierarchical inheritance. Create a parent (base) class named `Details` and two child (derived) classes named `Employee` and `Doctor`.
+To Write a Python program to get the name, attendance and Id of a student and check they are eligible for Placement using multiple inheritance
+Note: grade >90 eligible student else Not Eligible student.
 
 ---
 
 ### ALGORITHM
 
-1. **Begin the program.**
-2. **Create a class Details** with an `__init__` method to initialize three attributes: `id`, `name`, and `gender`.
-3. **Define a method display_details()** to print the values of `id`, `name`, and `gender`.
-4. **Create a class Employee** that inherits from the `Details` class. 
-   - Add two additional attributes: `company` and `department`.
-   - Override the `display_details()` method to print the employee-specific attributes (`company` and `department`) along with the inherited details.
-5. **Create a class Doctor** that also inherits from the `Details` class. 
-   - Add two additional attributes: `hospital` and `department`.
-   - Override the `display_details()` method to print the doctor-specific attributes (`hospital` and `department`) along with the inherited details.
-6. **Accept input** for employee and doctor details.
-7. **Create objects of Employee and Doctor** using the input.
-8. **Call the `display_details()` method** for both objects to print the details.
-9. **Terminate the program.**
+1. Start the program.
+2. Define a base class Student that stores the student’s name and ID.
+3. Define another base class Attendance that stores the student’s attendance and grade.
+4. Create a derived class PlacementCheck that inherits from both Student and Attendance.
+5. In PlacementCheck, define a method check_eligibility() to check if grade > 90 → print “Eligible for Placement”, else → print “Not Eligible for Placement”.
+6. Accept inputs: name, student ID, attendance, and grade from the user.
+7. Create an object of PlacementCheck, call methods to display student details, and check placement eligibility.
 
 ---
 
 ### PROGRAM
 ```
-
+class stud:
+    def __init__(self,c):
+        self.c=c
+    def display(self,c):
+        if c>90:
+            print("Eligible for Placement")
+        else:
+            print("Not Eligible for Placement")
+class par(stud):
+    pass
+a=input()
+b=int(input())
+c=int(input())
+s=par(c)
+print(a)
+print(b)
+s.display(c)
 
 ```
 
 ### OUTPUT  
 
-(Output Screenshot)  
+<img width="1123" height="325" alt="Screenshot 2025-08-27 142740" src="https://github.com/user-attachments/assets/265f1652-f641-40f2-bedd-e69e24825aeb" />
+
 
 
 ### RESULT
+Thus the Python program to get the name, attendance and Id of a student and check they are eligible for Placement using multiple inheritance is executed successfully.
